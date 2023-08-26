@@ -1,3 +1,7 @@
+import stream.Dish;
+import stream.DishData;
+import stream.Type;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -82,6 +86,19 @@ public class JavaCollectors {
         System.out.println(dishType);
 
 
+    }
+
+    public static class TaskCharacter {
+        public static void main(String[] args) {
+            List<String> words = Arrays.asList("Java", "Apple", "Honda", "Developer");
+
+            String x = "Java";
+            System.out.println(x.length());
+
+            words.stream()
+                    .map(String::length)
+                    .forEach(System.out::println);
+        }
     }
 }
 
